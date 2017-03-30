@@ -1,0 +1,2 @@
+# Dig
+Dig earthbending ability
