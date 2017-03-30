@@ -12,6 +12,10 @@ public class DigListener implements Listener{
 
 	@EventHandler
 	public void onSneak(PlayerToggleSneakEvent event) {
+		if (event.isCancelled()) {
+			return;
+		}
+		
 		Player player = event.getPlayer();
 		if (player.isSneaking()) {
 			return;
